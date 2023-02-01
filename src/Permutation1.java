@@ -1,6 +1,9 @@
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.
+ */
 public class Permutation1 {
     static List<List<Integer>> res = new LinkedList<>();
     public static List<List<Integer>> permute(int[] nums) {
