@@ -10,9 +10,10 @@ import java.util.stream.Collectors;
 public class NextPermutation {
     public static void nextPermutation(int[] nums) {
         // nums = [1,2,3] the next lexi would be [1,3,2]
-        // find the first decreasing value
+        // find the first decreasing value from right to left
         // swap this value with the next value that is just larger
         // reverse all values that are after the first decreasing
+        //we reverse as all values after are smaller than the next ie 2,7,5 , 5 is smaller than 7 but 7 is not smaller than 2, then we reverse for 257
         int i = nums.length - 2;
         while (i >= 0 && nums[i + 1] <= nums[i]) { // Determines if there is a greater perm
             i--; // if negative them no next perm, otherwise there is a next perm
